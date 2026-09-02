@@ -1,10 +1,12 @@
 package com.example.evt_core_service.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.util.UUID;
 
 @Entity
+@Getter
 @Table(name="event")
 public class Event extends BaseEntity{
     @Column(name="event_name", nullable = false)
@@ -42,15 +44,6 @@ public class Event extends BaseEntity{
         this.category = category;
         this.status = EventStatus.DRAFT;
     }
-
-    public String getEventName() { return eventName; }
-    public UUID getOrganizerId() { return organizerId; }
-    public String getOrganizerName() { return organizerName; }
-    public String getOrganizerMobile() { return organizerMobile; }
-    public String getCity() { return city; }
-    public EventCategory getCategory() { return category; }
-    public EventStatus getStatus() { return status; }
-    public String getBannerImageKey() { return bannerImageKey; }
 
     protected Event(){
     }

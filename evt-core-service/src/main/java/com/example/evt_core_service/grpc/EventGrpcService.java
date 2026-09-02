@@ -34,7 +34,7 @@ public class EventGrpcService extends EventServiceGrpc.EventServiceImplBase {
     public void createEvent(CreateEventRequest request, StreamObserver<CreateEventResponse> responseObserver) {
         try {
             UUID organizerId = UUID.fromString(request.getOrganizerId());
-
+            log.info("Created Event");
             Event event = eventService.createEvent(
                     request.getEventName(),
                     organizerId,
