@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: evt-core-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/evently}
+    username: ${SPRING_DATASOURCE_USERNAME:evently}
+    password: ${SPRING_DATASOURCE_PASSWORD:evently}
+
+grpc:
+  server:
+    port: 9090
