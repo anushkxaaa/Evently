@@ -14,22 +14,15 @@ import java.util.UUID;
 @EntityListeners(AuditingEntityListener.class)
 public class BaseEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.UUID)
-    @Column(updatable = false,nullable = false)
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(updatable = false, nullable = false)
     private UUID id;
 
     @CreatedDate
-    @Column(name="created_on", nullable = false,updatable = false)
+    @Column(name = "created_on", nullable = false, updatable = false)
     private Instant createdOn;
 
-//    @LastModifiedDate
-//    @Column(name = "modified_on",nullable = false)
-//    private Instant modifiedOn;
-
-    @PreUpdate
-    protected void modifying(){
-        modifiedOn=Instant.now();
-    }
-
-
+    @LastModifiedDate
+    @Column(name = "modified_on", nullable = false)
+    private Instant modifiedOn;
 }

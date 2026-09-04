@@ -1,6 +1,8 @@
 package com.example.evt_core_service.grpc;
 
-import com.example.evt_core_service.entity.Event;
+import com.example.evt_core_service.dto.request.UpdateStatusRequest;
+import com.example.evt_core_service.dto.response.EventResponse;
+import com.example.evt_core_service.dto.response.EventStatusResponse;
 import com.example.evt_core_service.exception.DuplicateOrganizerMobileException;
 import com.example.evt_core_service.exception.EventNotFoundException;
 import com.example.evt_core_service.exception.IllegalStatusTransitionException;
@@ -16,7 +18,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
 import java.util.Map;
-import java.util.Set;
 import java.util.UUID;
 
 @GrpcService
@@ -34,15 +35,19 @@ public class EventGrpcService extends EventServiceGrpc.EventServiceImplBase {
     public void createEvent(CreateEventRequest request, StreamObserver<CreateEventResponse> responseObserver) {
         try {
             UUID organizerId = UUID.fromString(request.getOrganizerId());
-            log.info("Created Event");
-            Event event = eventService.createEvent(
-                    request.getEventName(),
-                    organizerId,
-                    request.getOrganizerName(),
-                    request.getOrganizerMobile(),
-                    request.getCity(),
-                    EventEnumMapper.toJpa(request.getCategory())
-            );
+
+            com.example.evt_core_service.dto.request.CreateEventRequest coreRequest =
+                    new com.example.evt_core_service.dto.request.CreateEventRequest(
+                            request.getEventName(),
+                            organizerId,
+                            request.getOrganizerName(),
+                            request.getOrganizerMobile(),
+                            request.getCity(),
+                            EventEnumMapper.toJpa(request.getCategory())
+                    );
+
+            EventResponse event = eventService.createEvent(coreRequest);
+            log.info("Created event {}", event.id());
 
             CreateEventResponse response = CreateEventResponse.newBuilder()
                     .setEvent(EventProtoMapper.toProto(event))
@@ -71,7 +76,7 @@ public class EventGrpcService extends EventServiceGrpc.EventServiceImplBase {
     public void getEvent(GetEventRequest request, StreamObserver<GetEventResponse> responseObserver) {
         try {
             UUID id = UUID.fromString(request.getId());
-            Event event = eventService.getEvent(id);
+            EventResponse event = eventService.getEvent(id);
 
             GetEventResponse response = GetEventResponse.newBuilder()
                     .setEvent(EventProtoMapper.toProto(event))
@@ -109,7 +114,7 @@ public class EventGrpcService extends EventServiceGrpc.EventServiceImplBase {
             int size = request.getSize() > 0 ? request.getSize() : 20;
             Pageable pageable = PageRequest.of(page, size);
 
-            Page<Event> results = eventService.searchEvents(city, category, status, request.getIncludeCancelled(), pageable);
+            Page<EventResponse> results = eventService.searchEvents(city, category, status, request.getIncludeCancelled(), pageable);
 
             ListEventsResponse.Builder responseBuilder = ListEventsResponse.newBuilder()
                     .setTotalElements(results.getTotalElements())
@@ -134,7 +139,8 @@ public class EventGrpcService extends EventServiceGrpc.EventServiceImplBase {
             UUID id = UUID.fromString(request.getId());
             var newStatus = EventEnumMapper.toJpa(request.getNewStatus());
 
-            Event event = eventService.updateStatus(id, newStatus);
+            UpdateStatusRequest coreRequest = new UpdateStatusRequest(id, newStatus);
+            EventResponse event = eventService.updateStatus(coreRequest);
 
             UpdateEventStatusResponse response = UpdateEventStatusResponse.newBuilder()
                     .setEvent(EventProtoMapper.toProto(event))
@@ -158,29 +164,21 @@ public class EventGrpcService extends EventServiceGrpc.EventServiceImplBase {
                     .asRuntimeException());
         }
     }
-
     @Override
     public void getEventStats(GetEventStatsRequest request, StreamObserver<GetEventStatsResponse> responseObserver) {
         try {
-            Map<String, Object> stats = eventService.getStats();
-
-            @SuppressWarnings("unchecked")
-            Map<com.example.evt_core_service.entity.EventStatus, Long> byStatus =
-                    (Map<com.example.evt_core_service.entity.EventStatus, Long>) stats.get("byStatus");
-            @SuppressWarnings("unchecked")
-            Map<com.example.evt_core_service.entity.EventCategory, Long> byCategory =
-                    (Map<com.example.evt_core_service.entity.EventCategory, Long>) stats.get("byCategory");
+            EventStatusResponse stats = eventService.getStats();
 
             GetEventStatsResponse.Builder responseBuilder = GetEventStatsResponse.newBuilder()
-                    .setTotalEvents((Long) stats.get("totalEvents"));
+                    .setTotalEvents(stats.totalStatus());
 
-            byStatus.forEach((status, count) -> responseBuilder.addByStatus(
+            stats.byStatus().forEach((status, count) -> responseBuilder.addByStatus(
                     StatusCount.newBuilder()
                             .setStatus(EventEnumMapper.toProto(status))
                             .setCount(count)
                             .build()));
 
-            byCategory.forEach((category, count) -> responseBuilder.addByCategory(
+            stats.byCategory().forEach((category, count) -> responseBuilder.addByCategory(
                     CategoryCount.newBuilder()
                             .setCategory(EventEnumMapper.toProto(category))
                             .setCount(count)
