@@ -20,7 +20,7 @@ public class EventController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<EventResponse> getEvent(@PathVariable UUID id){
+    public ResponseEntity<EventResponse> getEvent(@PathVariable("id")  UUID id){
         GetEventRequest grpcRequest= GetEventRequest.newBuilder().setId(id.toString()).build();
         GetEventResponse grpcResponse = eventGrpcClient.getEvent(grpcRequest);
         return ResponseEntity.ok(EventProtoToDtoMapper.toDto(grpcResponse.getEvent()));
