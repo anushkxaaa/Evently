@@ -1,6 +1,7 @@
 package com.evently.client;
 
 
+import com.evently.config.FeignConfig;
 import com.evently.dto.request.CreateEventRequest;
 import com.evently.dto.response.EventResponse;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
 
-@FeignClient(name="evt-open-service", url="${evt-open-service.url}")
+@FeignClient(name="evt-open-service", url="${evt-open-service.url}", configuration = FeignConfig.class)
 public interface OpenServiceClient {
     @PostMapping("/open/v1/events")
     EventResponse createEvent(@RequestBody CreateEventRequest request);
