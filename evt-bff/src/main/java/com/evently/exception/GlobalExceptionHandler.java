@@ -12,4 +12,10 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleNotFound(OpenServiceNotFoundException e){
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ErrorResponse.of(e.getMessage(),HttpStatus.NOT_FOUND.value()));
     }
+
+    @ExceptionHandler(OpenServiceUnavailableException.class)
+    public ResponseEntity<ErrorResponse> handleUnavailable(OpenServiceUnavailableException e) {
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+                .body(ErrorResponse.of(e.getMessage(), HttpStatus.SERVICE_UNAVAILABLE.value()));
+    }
 }

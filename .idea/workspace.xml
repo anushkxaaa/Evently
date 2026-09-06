@@ -7,6 +7,8 @@
     <list default="true" id="e0471d1b-4ad3-462e-9006-499ce17ff2d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-bff/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-bff/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="86" />
+    <option name="cachedIndexableFilesCount" value="103" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,61 +36,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="5.164489144108434E-186" />
-      <entry key="MS500" value="8.762046434548626E-38" />
-      <entry key="S2" value="5.572525354390373E-10" />
-      <entry key="S5" value="2.5971514304657913E-4" />
-      <entry key="S10" value="0.025591258848489826" />
-      <entry key="S30" value="0.7191631513945722" />
-      <entry key="S60" value="1.8339786108595308" />
-      <entry key="M2" value="3.131850272760347" />
-      <entry key="M5" value="6.3663580929755454" />
-      <entry key="M10" value="12.529392126139024" />
-      <entry key="M15" value="18.940114489546133" />
-      <entry key="M30" value="37.92762156026416" />
-      <entry key="H1" value="83.44331832641576" />
-      <entry key="H2" value="178.9475266022133" />
-      <entry key="H4" value="324.5836173480997" />
-      <entry key="D1" value="705.034589208557" />
-      <entry key="W1" value="841.466929164881" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000000475" />
+      <entry key="S10" value="1.000000218201192" />
+      <entry key="S30" value="1.007394166448159" />
+      <entry key="S60" value="1.16161592169707" />
+      <entry key="M2" value="2.198187362312637" />
+      <entry key="M5" value="11.392151770067587" />
+      <entry key="M10" value="29.38330782174768" />
+      <entry key="M15" value="43.26938698774204" />
+      <entry key="M30" value="72.80938942395564" />
+      <entry key="H1" value="122.72540407536941" />
+      <entry key="H2" value="219.7862320772679" />
+      <entry key="H4" value="370.1058308557407" />
+      <entry key="D1" value="770.8805316015174" />
+      <entry key="W1" value="916.5685761942652" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000654161900229" />
-      <entry key="MS500" value="1.158283142001623" />
-      <entry key="S2" value="1.953352445887419" />
-      <entry key="S5" value="2.4712462839562663" />
-      <entry key="S10" value="2.7420547531007973" />
-      <entry key="S30" value="4.287644371168799" />
-      <entry key="S60" value="7.583254413203153" />
-      <entry key="M2" value="12.139293335981437" />
-      <entry key="M5" value="19.70698457334024" />
-      <entry key="M10" value="27.387175629723615" />
-      <entry key="M15" value="32.03501989391026" />
-      <entry key="M30" value="40.47336915640691" />
-      <entry key="H1" value="56.409556610630204" />
-      <entry key="H2" value="90.77965919114081" />
-      <entry key="H4" value="148.82378468624913" />
-      <entry key="D1" value="295.253217347061" />
-      <entry key="W1" value="342.9811321044904" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="7.596344933958723E-182" />
+      <entry key="S2" value="6.03580615856271E-46" />
+      <entry key="S5" value="1.2806493316611083E-18" />
+      <entry key="S10" value="1.957263867335882E-9" />
+      <entry key="S30" value="0.0040636161551646606" />
+      <entry key="S60" value="0.19412875209987535" />
+      <entry key="M2" value="1.5471527325549952" />
+      <entry key="M5" value="7.213681609710614" />
+      <entry key="M10" value="15.998424720760335" />
+      <entry key="M15" value="23.62757676638986" />
+      <entry key="M30" value="39.95146990918115" />
+      <entry key="H1" value="62.215041212419145" />
+      <entry key="H2" value="100.13922408763392" />
+      <entry key="H4" value="161.10612209572687" />
+      <entry key="D1" value="316.6819859592593" />
+      <entry key="W1" value="368.2207946389261" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.270650921678481E-4" />
-      <entry key="MS500" value="0.26321662632323395" />
-      <entry key="S2" value="1.3570589639676902" />
-      <entry key="S5" value="2.135296224393053" />
-      <entry key="S10" value="2.5685330386857284" />
-      <entry key="S30" value="4.843844944043965" />
-      <entry key="S60" value="9.245265019020533" />
-      <entry key="M2" value="15.12671947633363" />
-      <entry key="M5" value="25.977215984848527" />
-      <entry key="M10" value="39.84889887015866" />
-      <entry key="M15" value="50.92205413049141" />
-      <entry key="M30" value="78.36702393951974" />
-      <entry key="H1" value="139.82845723639772" />
-      <entry key="H2" value="269.7062906209763" />
-      <entry key="H4" value="473.38895318768886" />
-      <entry key="D1" value="1000.281162875385" />
-      <entry key="W1" value="1184.446942583536" />
+      <entry key="MS100" value="4.664002524154924E-6" />
+      <entry key="MS500" value="0.08585226458935138" />
+      <entry key="S2" value="0.5412998900042642" />
+      <entry key="S5" value="0.7823033239503439" />
+      <entry key="S10" value="0.884479345454649" />
+      <entry key="S30" value="0.9711718762021305" />
+      <entry key="S60" value="1.330979206689615" />
+      <entry key="M2" value="3.717048052167317" />
+      <entry key="M5" value="18.567024257140286" />
+      <entry key="M10" value="45.3406942769951" />
+      <entry key="M15" value="66.8569839816864" />
+      <entry key="M30" value="112.72716701297139" />
+      <entry key="H1" value="184.91376139432919" />
+      <entry key="H2" value="319.9028822664278" />
+      <entry key="H4" value="531.192452665161" />
+      <entry key="D1" value="1087.555520183598" />
+      <entry key="W1" value="1284.7881894926509" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -106,45 +108,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EvtCoreServiceApplication.executor": "Run",
-    "Application.EvtOpenServiceApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.EvtCoreServiceApplicationTests.executor": "Run",
-    "Maven.evently-parent [clean,compile].executor": "Run",
-    "Maven.evently-parent [clean,install,-pl...].executor": "Run",
-    "Maven.evently-parent [clean,install].executor": "Run",
-    "Maven.evently-parent [clean].executor": "Run",
-    "Maven.evently-parent [compile].executor": "Run",
-    "Maven.evently-parent [dependency:tree,-pl...].executor": "Run",
-    "Maven.evently-parent [dependency:tree...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.EvtBffApplication (1).executor": "Run",
-    "Spring Boot.EvtBffApplication.executor": "Run",
-    "Spring Boot.EvtCoreServiceApplication.executor": "Run",
-    "Spring Boot.EvtOpenServiceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Phase2",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/anush/IdeaProjects/Evently/evt-bff/src/main/java/com/evently/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "pyconsole"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EvtCoreServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EvtOpenServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvtCoreServiceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,install,-pl...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [dependency:tree,-pl...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [dependency:tree...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EvtBffApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtBffApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtCoreServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtOpenServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Phase2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/anush/IdeaProjects/Evently/evt-bff/src/main/java/com/evently/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;pyconsole&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anush\IdeaProjects\Evently\evt-core-service\src\main\resources" />
@@ -289,8 +291,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
         <item itemvalue="Spring Boot.EvtBffApplication (1)" />
+        <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
         <item itemvalue="Spring Boot.EvtBffApplication" />
         <item itemvalue="Spring Boot.EvtCoreServiceApplication" />
         <item itemvalue="Application.Main" />
