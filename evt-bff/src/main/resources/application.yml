@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+evt-open-service:
+  url: http://localhost:8081

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0471d1b-4ad3-462e-9006-499ce17ff2d9" name="Changes" comment="" />
+    <list default="true" id="e0471d1b-4ad3-462e-9006-499ce17ff2d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/evt-bff/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/dto/request/CreateEventRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/dto/request/UpdateStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/dto/response/EventResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/evt-core-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/evt-core-service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -25,74 +34,67 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000356876464" />
-      <entry key="MS500" value="1.0327955461740839" />
-      <entry key="S2" value="1.6863168377778486" />
-      <entry key="S5" value="3.8896779950108105" />
-      <entry key="S10" value="8.745040006729566" />
-      <entry key="S30" value="27.304272895114348" />
-      <entry key="S60" value="45.24972061360124" />
-      <entry key="M2" value="65.71472980592597" />
-      <entry key="M5" value="87.8790691328337" />
-      <entry key="M10" value="101.68328141510166" />
-      <entry key="M15" value="113.6837295497869" />
-      <entry key="M30" value="146.22211916717526" />
-      <entry key="H1" value="190.4050145057614" />
-      <entry key="H2" value="252.06795523687515" />
-      <entry key="H4" value="345.9740988134673" />
-      <entry key="D1" value="590.792227668588" />
-      <entry key="W1" value="674.0843471118753" />
+      <entry key="MS100" value="1.0013248089135232" />
+      <entry key="MS500" value="1.2657239534623483" />
+      <entry key="S2" value="1.7359296667360116" />
+      <entry key="S5" value="2.2284223787192907" />
+      <entry key="S10" value="3.1715550037556675" />
+      <entry key="S30" value="6.1002499667480885" />
+      <entry key="S60" value="8.616698467628433" />
+      <entry key="M2" value="12.282998958867912" />
+      <entry key="M5" value="20.194013887006225" />
+      <entry key="M10" value="32.75417067688825" />
+      <entry key="M15" value="48.43453321274609" />
+      <entry key="M30" value="98.59601035153592" />
+      <entry key="H1" value="174.44828685157498" />
+      <entry key="H2" value="267.9618596847894" />
+      <entry key="H4" value="386.0633309283284" />
+      <entry key="D1" value="672.129655450083" />
+      <entry key="W1" value="769.3636181841881" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.8215139306157645E-190" />
-      <entry key="S10" value="1.3496347397039553E-95" />
-      <entry key="S30" value="2.3808868182763832E-32" />
-      <entry key="S60" value="1.543209704037458E-16" />
-      <entry key="M2" value="1.2794939964558539E-8" />
-      <entry key="M5" value="0.0013657794494660574" />
-      <entry key="M10" value="0.15342115671933948" />
-      <entry key="M15" value="0.969744238703006" />
-      <entry key="M30" value="7.476409868103418" />
-      <entry key="H1" value="24.57579809524655" />
-      <entry key="H2" value="56.89884057433039" />
-      <entry key="H4" value="104.59005579509594" />
-      <entry key="D1" value="202.1885794595267" />
-      <entry key="W1" value="229.91608690447848" />
+      <entry key="MS100" value="2.1665878852014385E-8" />
+      <entry key="MS500" value="0.029326781906779124" />
+      <entry key="S2" value="0.4681875921204387" />
+      <entry key="S5" value="1.1398071066875926" />
+      <entry key="S10" value="1.910693798224164" />
+      <entry key="S30" value="3.6258132732777613" />
+      <entry key="S60" value="6.217360738744972" />
+      <entry key="M2" value="11.924554812177215" />
+      <entry key="M5" value="23.578617030954074" />
+      <entry key="M10" value="33.91361726240928" />
+      <entry key="M15" value="40.43849184737234" />
+      <entry key="M30" value="52.64833983269583" />
+      <entry key="H1" value="71.05947821426754" />
+      <entry key="H2" value="104.079032506409" />
+      <entry key="H4" value="154.47369293626346" />
+      <entry key="D1" value="264.436702419309" />
+      <entry key="W1" value="296.98095659649556" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2920308111125433E-5" />
-      <entry key="MS500" value="0.10630270848348801" />
-      <entry key="S2" value="0.9898010379391862" />
-      <entry key="S5" value="3.44860958642542" />
-      <entry key="S10" value="8.473722260301482" />
-      <entry key="S30" value="27.19339175162342" />
-      <entry key="S60" value="45.18901129492423" />
-      <entry key="M2" value="65.68192321035234" />
-      <entry key="M5" value="87.86630653640269" />
-      <entry key="M10" value="101.82897882811214" />
-      <entry key="M15" value="114.64679315743858" />
-      <entry key="M30" value="153.68916303922586" />
-      <entry key="H1" value="214.96750123087497" />
-      <entry key="H2" value="308.9508917925045" />
-      <entry key="H4" value="450.548980865751" />
-      <entry key="D1" value="792.9757709900778" />
-      <entry key="W1" value="903.9996124507759" />
+      <entry key="MS100" value="0.0020253924703897788" />
+      <entry key="MS500" value="0.3727791442910431" />
+      <entry key="S2" value="1.5523195983756126" />
+      <entry key="S5" value="2.896891711793782" />
+      <entry key="S10" value="4.712559590781877" />
+      <entry key="S30" value="9.49520060405005" />
+      <entry key="S60" value="14.646113052744823" />
+      <entry key="M2" value="24.03683426093376" />
+      <entry key="M5" value="43.640913367824126" />
+      <entry key="M10" value="66.57334966652515" />
+      <entry key="M15" value="88.79787064056583" />
+      <entry key="M30" value="151.1950679353851" />
+      <entry key="H1" value="245.47391892711516" />
+      <entry key="H2" value="372.01483937853254" />
+      <entry key="H4" value="540.5165373607309" />
+      <entry key="D1" value="936.5601516271244" />
+      <entry key="W1" value="1066.3435692375976" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -103,6 +105,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3IijDwDb7oVKwrnL9OCVO2U0uT1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -111,6 +116,7 @@
   "keyToString": {
     "Application.EvtCoreServiceApplication.executor": "Run",
     "Application.EvtOpenServiceApplication.executor": "Run",
+    "Application.Main.executor": "Run",
     "JUnit.EvtCoreServiceApplicationTests.executor": "Run",
     "Maven.evently-parent [clean,compile].executor": "Run",
     "Maven.evently-parent [clean,install,-pl...].executor": "Run",
@@ -124,7 +130,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.EvtBffApplication (1).executor": "Run",
+    "Spring Boot.EvtBffApplication.executor": "Run",
     "Spring Boot.EvtCoreServiceApplication.executor": "Run",
+    "Spring Boot.EvtOpenServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "Phase2",
     "kotlin-language-version-configured": "true",
@@ -135,11 +144,11 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/anush/IdeaProjects/Evently/evt-open-service/src/main/java/com/evently/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/anush/IdeaProjects/Evently/evt-bff/src/main/java/com/evently/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable"
+    "settings.editor.selected.configurable": "pyconsole"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -158,10 +167,10 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EvtCoreServiceApplication">
-    <configuration name="EvtOpenServiceApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.evently.EvtOpenServiceApplication" />
-      <module name="evt-open-service" />
+  <component name="RunManager" selected="Spring Boot.EvtBffApplication (1)">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.evently.Main" />
+      <module name="evt-bff" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.evently.*" />
@@ -207,6 +216,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="EvtBffApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="evt-bff" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evently.EvtBffApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.evently.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvtBffApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="evt-bff" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evently.bff.EvtBffApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.evently.bff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EvtCoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="evt-core-service" />
@@ -214,6 +251,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.evt_core_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvtOpenServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="evt-open-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evently.EvtOpenServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.evently.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,13 +287,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.EvtOpenServiceApplication" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.EvtBffApplication (1)" />
+      <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
+      <item itemvalue="Spring Boot.EvtBffApplication" />
       <item itemvalue="Spring Boot.EvtCoreServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EvtOpenServiceApplication" />
+        <item itemvalue="Spring Boot.EvtBffApplication (1)" />
+        <item itemvalue="Spring Boot.EvtBffApplication" />
+        <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
         <item itemvalue="Spring Boot.EvtCoreServiceApplication" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -294,6 +351,11 @@
           <url>file://$PROJECT_DIR$/evt-open-service/src/main/java/com/evently/EvtOpenServiceApplication.java</url>
           <line>6</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/repository/EventSpecifications.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="io.grpc.netty.shaded.io.netty.handler.codec.http2.Http2Exception" package="io.grpc.netty.shaded.io.netty.handler.codec.http2" />
