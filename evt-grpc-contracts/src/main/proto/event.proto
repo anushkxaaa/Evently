@@ -8,7 +8,15 @@ option java_outer_classname = "EventProto";
 
 import "google/protobuf/timestamp.proto";
 
-// ---------- Enums ----------
+service EventService {
+  rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse);
+  rpc GetEvent(GetEventRequest) returns (GetEventResponse);
+  rpc ListEvents(ListEventsRequest) returns (ListEventsResponse);
+  rpc UpdateEventStatus(UpdateEventStatusRequest) returns (UpdateEventStatusResponse);
+  rpc GetEventStats(GetEventStatsRequest) returns (GetEventStatsResponse);
+}
+
+//enum
 
 enum EventCategory {
   EVENT_CATEGORY_UNSPECIFIED = 0;
@@ -27,7 +35,7 @@ enum EventStatus {
   EVENT_STATUS_SOLD_OUT = 4;
 }
 
-// ---------- Core message ----------
+//message
 
 message Event {
   string id = 1;
@@ -43,7 +51,7 @@ message Event {
   google.protobuf.Timestamp modified_on = 11;
 }
 
-// ---------- CreateEvent ----------
+//createEvent
 
 message CreateEventRequest {
   string event_name = 1;
@@ -58,7 +66,7 @@ message CreateEventResponse {
   Event event = 1;
 }
 
-// ---------- GetEvent ----------
+//getEvent
 
 message GetEventRequest {
   string id = 1;
@@ -68,7 +76,7 @@ message GetEventResponse {
   Event event = 1;
 }
 
-// ---------- ListEvents ----------
+//ListEvents
 
 message ListEventsRequest {
   string city = 1;
@@ -85,7 +93,7 @@ message ListEventsResponse {
   int32 total_pages = 3;
 }
 
-// ---------- UpdateEventStatus ----------
+//UpdateEventStatus
 
 message UpdateEventStatusRequest {
   string id = 1;
@@ -96,7 +104,7 @@ message UpdateEventStatusResponse {
   Event event = 1;
 }
 
-// ---------- GetEventStats ----------
+//GetEventStats
 
 message GetEventStatsRequest {
 }
@@ -117,12 +125,4 @@ message GetEventStatsResponse {
   repeated CategoryCount by_category = 3;
 }
 
-// ---------- Service ----------
 
-service EventService {
-  rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse);
-  rpc GetEvent(GetEventRequest) returns (GetEventResponse);
-  rpc ListEvents(ListEventsRequest) returns (ListEventsResponse);
-  rpc UpdateEventStatus(UpdateEventStatusRequest) returns (UpdateEventStatusResponse);
-  rpc GetEventStats(GetEventStatsRequest) returns (GetEventStatsResponse);
-}

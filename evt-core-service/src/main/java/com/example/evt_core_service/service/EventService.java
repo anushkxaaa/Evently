@@ -1,5 +1,9 @@
 package com.example.evt_core_service.service;
 
+import com.example.evt_core_service.dto.request.CreateEventRequest;
+import com.example.evt_core_service.dto.request.UpdateStatusRequest;
+import com.example.evt_core_service.dto.response.EventStatusResponse;
+import com.example.evt_core_service.dto.response.EventResponse;
 import com.example.evt_core_service.entity.Event;
 import com.example.evt_core_service.entity.EventCategory;
 import com.example.evt_core_service.entity.EventStatus;
@@ -14,6 +18,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.EnumMap;
 import java.util.EnumSet;
@@ -39,29 +44,35 @@ public class EventService {
     }
 
     @Transactional
-    public Event createEvent(String eventName, UUID organizerId, String organizerName,
-                             String organizerMobile, String city, EventCategory category) {
-        if (eventRepository.existsByOrganizerMobile(organizerMobile)) {
-            throw new DuplicateOrganizerMobileException(organizerMobile);
+    public EventResponse createEvent(CreateEventRequest request) {
+        if (eventRepository.existsByOrganizerMobile(request.organizerMobile())) {
+            throw new DuplicateOrganizerMobileException(request.organizerMobile());
         }
-
-        Event event = new Event(eventName, organizerId, organizerName, organizerMobile, city, category);
-
+        Event event = new Event(
+                request.eventName(),
+                request.organizerId(),
+                request.organizerName(),
+                request.organizerMobile(),
+                request.city(),
+                request.category()
+        );
         try {
-            return eventRepository.save(event);
+             Event saved=eventRepository.save(event);
+             return EventResponse.from(saved);
         } catch (DataIntegrityViolationException e) {
-            throw new DuplicateOrganizerMobileException(organizerMobile);
+            throw new DuplicateOrganizerMobileException(request.organizerMobile());
         }
     }
 
     @Transactional(readOnly = true)
-    public Event getEvent(UUID id) {
-        return eventRepository.findById(id)
+    public EventResponse getEvent(UUID id) {
+        Event event= eventRepository.findById(id)
                 .orElseThrow(() -> new EventNotFoundException(id));
+        return EventResponse.from(event);
     }
 
     @Transactional(readOnly = true)
-    public Page<Event> searchEvents(String city, EventCategory category, EventStatus status,
+    public Page<EventResponse> searchEvents(String city, EventCategory category, EventStatus status,
                                     boolean includeCancelled, Pageable pageable) {
         Specification<Event> spec = Specification.where(EventSpecifications.hasCity(city))
                 .and(EventSpecifications.hasCategory(category))
@@ -71,27 +82,27 @@ public class EventService {
             spec = spec.and(EventSpecifications.excludeCancelled());
         }
 
-        return eventRepository.findAll(spec, pageable);
+        return eventRepository.findAll(spec, pageable).map(EventResponse::from);
     }
 
     @Transactional
-    public Event updateStatus(UUID id, EventStatus newStatus) {
-        Event event = eventRepository.findById(id)
-                .orElseThrow(() -> new EventNotFoundException(id));
+    public EventResponse updateStatus(UpdateStatusRequest request) {
+        Event event = eventRepository.findById(request.id())
+                .orElseThrow(() -> new EventNotFoundException(request.id()));
 
         EventStatus currentStatus = event.getStatus();
         Set<EventStatus> allowed = ALLOWED_TRANSITIONS.getOrDefault(currentStatus, EnumSet.noneOf(EventStatus.class));
 
-        if (!allowed.contains(newStatus)) {
-            throw new IllegalStatusTransitionException(currentStatus, newStatus);
+        if (!allowed.contains(request.newStatus())) {
+            throw new IllegalStatusTransitionException(currentStatus, request.newStatus());
         }
 
-        event.transitionStatusTo(newStatus);
-        return event;
+        event.transitionStatusTo(request.newStatus());
+        return EventResponse.from(event);
     }
 
     @Transactional(readOnly = true)
-    public Map<String, Object> getStats() {
+    public EventStatusResponse getStats() {
         long totalEvents = eventRepository.count();
 
         Map<EventStatus, Long> byStatus = new EnumMap<>(EventStatus.class);
@@ -106,10 +117,6 @@ public class EventService {
                             .and(EventSpecifications.excludeCancelled())));
         }
 
-        return Map.of(
-                "totalEvents", totalEvents,
-                "byStatus", byStatus,
-                "byCategory", byCategory
-        );
+        return new EventStatusResponse(totalEvents,byStatus,byCategory);
     }
 }

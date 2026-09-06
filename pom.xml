@@ -12,6 +12,8 @@
     <modules>
         <module>evt-grpc-contracts</module>
         <module>evt-core-service</module>
+        <module>evt-open-service</module>
+        <module>evt-bff</module>
     </modules>
 
     <properties>

@@ -8,7 +8,7 @@ public class EventEnumMapper {
     private EventEnumMapper() {
     }
 
-    // ---------- Category: JPA -> Proto ----------
+    // Category: JPA -> Proto
     public static com.evently.grpc.EventCategory toProto(EventCategory jpaCategory) {
         if (jpaCategory == null) {
             return com.evently.grpc.EventCategory.EVENT_CATEGORY_UNSPECIFIED;
