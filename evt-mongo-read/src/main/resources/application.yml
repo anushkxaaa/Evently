@@ -2,14 +2,20 @@ spring:
   application:
     name: evt-mongo-read
 
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/evently_read
+  mongodb:
+    uri: mongodb://localhost:27017/evently-read
+    representation:
+      uuid: standard
 
   kafka:
     bootstrap-servers: localhost:9092
+
     consumer:
       group-id: evt-mongo-read
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+kafka:
+  cdc:
+    topic-pattern: "CDC_.*"

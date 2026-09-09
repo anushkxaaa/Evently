@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70f75143-6e19-4a6e-b761-6229cf154079" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../evt-mongo-read/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../keycloak/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-bff/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-bff/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-core-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-core-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-core-service/src/main/java/com/example/evt_core_service/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-core-service/src/main/java/com/example/evt_core_service/entity/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-grpc-contracts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-grpc-contracts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-open-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-open-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcSourceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcSourceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-open-service/src/main/java/com/evently/kafka/EventPublisher.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/evt-core-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/evt-core-service.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
     </list>
@@ -30,10 +36,10 @@
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3J2nsDsVwiq98SzeDOWslgJrWy6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,15 +47,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.evt-common [clean].executor": "Run",
+    "Maven.evt-common [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Phase2",
+    "git-widget-placeholder": "New",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/anush/IdeaProjects/Evently/evt-common"
+    "last_opened_file_path": "C:/Users/anush/IdeaProjects/Evently/evt-common",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="SharedIndexes">

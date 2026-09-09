@@ -9,18 +9,17 @@ import java.io.Serializable;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class EventCdcRow implements CdcRecord,Serializable {
+public class EventCdcRow implements CdcRecord, Serializable {
 
     @JsonProperty("id")
     private String id;
 
-    @JsonProperty("created_at")
-    private Long createdAt;
+    @JsonProperty("created_on")
+    private String createdOn;
 
-    @JsonProperty("updated_at")
-    private Long updatedAt;
+    @JsonProperty("modified_on")
+    private String modifiedOn;
 
-    // --- Event fields ---
     @JsonProperty("event_name")
     private String eventName;
 

@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0471d1b-4ad3-462e-9006-499ce17ff2d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/keycloak/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-bff/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-bff/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-core-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/entity/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-core-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-open-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-open-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-open-service/src/main/java/com/evently/config/GrpcClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-open-service/src/main/java/com/evently/config/GrpcClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-open-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-open-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcSourceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcSourceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-open-service/src/main/java/com/evently/kafka/EventPublisher.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/evt-core-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/evt-core-service.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -46,61 +50,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000087638729476" />
-      <entry key="MS500" value="1.0974124873843614" />
-      <entry key="S2" value="1.8826919623803535" />
-      <entry key="S5" value="5.1843057952627465" />
-      <entry key="S10" value="10.876156385199806" />
-      <entry key="S30" value="21.09938489649223" />
-      <entry key="S60" value="25.46301946311323" />
-      <entry key="M2" value="28.07454302632512" />
-      <entry key="M5" value="30.82643107616796" />
-      <entry key="M10" value="36.98778949287864" />
-      <entry key="M15" value="44.03468459902944" />
-      <entry key="M30" value="61.09715096349898" />
-      <entry key="H1" value="82.96014659760334" />
-      <entry key="H2" value="119.20546670259859" />
-      <entry key="H4" value="217.34502079600844" />
-      <entry key="D1" value="835.0512305088259" />
-      <entry key="W1" value="1179.7814858620213" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0000000244982439" />
+      <entry key="M10" value="1.0002112964103262" />
+      <entry key="M15" value="1.005960751884706" />
+      <entry key="M30" value="1.2918450905633978" />
+      <entry key="H1" value="5.669385130730983" />
+      <entry key="H2" value="32.2821720358049" />
+      <entry key="H4" value="117.1732835223711" />
+      <entry key="D1" value="786.3192045582639" />
+      <entry key="W1" value="1244.4863935318372" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.8999129044367884E-140" />
-      <entry key="S10" value="1.3783749557565386E-70" />
-      <entry key="S30" value="5.3292718103940144E-24" />
-      <entry key="S60" value="3.2998538582907312E-12" />
-      <entry key="M2" value="4.158672939223737E-6" />
-      <entry key="M5" value="0.023732718203509324" />
-      <entry key="M10" value="0.4706896774348584" />
-      <entry key="M15" value="1.3809115450614666" />
-      <entry key="M30" value="4.562280601858485" />
-      <entry key="H1" value="9.255500569892305" />
-      <entry key="H2" value="17.353410357521465" />
-      <entry key="H4" value="47.64357725060329" />
-      <entry key="D1" value="271.92210330350395" />
-      <entry key="W1" value="396.4830432513975" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="1.468906709455306E-240" />
+      <entry key="S30" value="1.1367494118643478E-80" />
+      <entry key="S60" value="1.066184511172596E-40" />
+      <entry key="M2" value="1.0325621100798713E-20" />
+      <entry key="M5" value="1.0128997730327568E-8" />
+      <entry key="M10" value="1.0064293370929553E-4" />
+      <entry key="M15" value="0.0021637773341931527" />
+      <entry key="M30" value="0.0478504254209118" />
+      <entry key="H1" value="0.3740151439855877" />
+      <entry key="H2" value="2.7341784974337644" />
+      <entry key="H4" value="17.912178293022553" />
+      <entry key="D1" value="230.46182887558993" />
+      <entry key="W1" value="387.9881970608825" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9330377866622901" />
-      <entry key="MS500" value="1.0725790633704875" />
-      <entry key="S2" value="1.8615492392493327" />
-      <entry key="S5" value="5.168150677625706" />
-      <entry key="S10" value="10.862175600955071" />
-      <entry key="S30" value="21.09097793782524" />
-      <entry key="S60" value="25.4579876273912" />
-      <entry key="M2" value="28.071780386043592" />
-      <entry key="M5" value="30.848826661697387" />
-      <entry key="M10" value="37.45652291601226" />
-      <entry key="M15" value="45.41258611839389" />
-      <entry key="M30" value="65.65479622883066" />
-      <entry key="H1" value="92.21035646417526" />
-      <entry key="H2" value="136.55286894139584" />
-      <entry key="H4" value="264.9805298693801" />
-      <entry key="D1" value="1106.9664499800942" />
-      <entry key="W1" value="1576.2631102209778" />
+      <entry key="MS100" value="0.06515411005257009" />
+      <entry key="MS500" value="0.5791464030973216" />
+      <entry key="S2" value="0.8723627057707586" />
+      <entry key="S5" value="0.9468448827110206" />
+      <entry key="S10" value="0.9730595473613218" />
+      <entry key="S30" value="0.9909379769166484" />
+      <entry key="S60" value="0.9954586766494371" />
+      <entry key="M2" value="0.9977267545021719" />
+      <entry key="M5" value="0.9990901154233974" />
+      <entry key="M10" value="0.9998561945243021" />
+      <entry key="M15" value="1.0078111818995281" />
+      <entry key="M30" value="1.3394317123196051" />
+      <entry key="H1" value="6.04296446484212" />
+      <entry key="H2" value="35.01521635843474" />
+      <entry key="H4" value="135.08228197684716" />
+      <entry key="D1" value="1016.7751592901934" />
+      <entry key="W1" value="1632.4731959085575" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -142,6 +146,7 @@
     "Spring Boot.EvtBffApplication (1).executor": "Run",
     "Spring Boot.EvtBffApplication.executor": "Run",
     "Spring Boot.EvtCoreServiceApplication.executor": "Run",
+    "Spring Boot.EvtMongoReadApplication.executor": "Run",
     "Spring Boot.EvtOpenServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "New",
@@ -153,7 +158,7 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/anush/IdeaProjects/Evently/evt-common/src/main/java/com/evently/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/anush/IdeaProjects/Evently/keycloak/src/main/java/com/evently/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -183,7 +188,7 @@
       <command value="mvn clean compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EvtOpenServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EvtMongoReadApplication">
     <configuration name="EvtCoreServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.evt_core_service.EvtCoreServiceApplication" />
       <module name="evt-core-service" />
@@ -246,20 +251,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvtBffApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="evt-bff" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evently.bff.EvtBffApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.evently.bff.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EvtCoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="evt-core-service" />
@@ -267,6 +258,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.evt_core_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvtMongoReadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="evt-mongo-read" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evently.EvtMongoReadApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.evently.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,18 +309,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.EvtCoreServiceApplication" />
+      <item itemvalue="Spring Boot.EvtMongoReadApplication" />
       <item itemvalue="Spring Boot.EvtBffApplication (1)" />
-      <item itemvalue="Spring Boot.EvtBffApplication" />
       <item itemvalue="Spring Boot.EvtCoreServiceApplication" />
       <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
+        <item itemvalue="Spring Boot.EvtMongoReadApplication" />
         <item itemvalue="Spring Boot.EvtBffApplication (1)" />
+        <item itemvalue="Spring Boot.EvtOpenServiceApplication" />
         <item itemvalue="Spring Boot.EvtCoreServiceApplication" />
         <item itemvalue="Application.EvtCoreServiceApplication" />
-        <item itemvalue="Spring Boot.EvtBffApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +401,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java</url>
-          <line>10</line>
+          <line>12</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -412,7 +417,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java</url>
-          <line>24</line>
+          <line>25</line>
           <log-expression expression="&quot;Received Kafka message:&quot;" language="JAVA" mode="CODE_FRAGMENT" />
           <placement>INTER_LINE</placement>
           <option name="timeStamp" value="14" />
@@ -426,6 +431,16 @@
           <url>file://$PROJECT_DIR$/evt-common/src/main/java/com/evently/event/EventCdcDTO.java</url>
           <line>14</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/keycloak/src/main/java/com/evently/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="io.grpc.netty.shaded.io.netty.handler.codec.http2.Http2Exception" package="io.grpc.netty.shaded.io.netty.handler.codec.http2" />

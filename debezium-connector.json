@@ -1,0 +1,25 @@
+{
+  "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+  "database.hostname": "evently",
+  "database.port": "5432",
+  "database.user": "evently",
+  "database.password": "evently",
+  "database.dbname": "evently",
+
+  "topic.prefix": "evently",
+
+  "plugin.name": "pgoutput",
+  "slot.name": "evently_slot",
+  "publication.name": "evently_publication",
+
+  "table.include.list": "public.event",
+
+  "schema.history.internal.kafka.bootstrap.servers": "evently-kafka:29092",
+  "schema.history.internal.kafka.topic": "schemahistory.evently",
+
+  "transforms": "routeEvent",
+
+  "transforms.routeEvent.type": "org.apache.kafka.connect.transforms.RegexRouter",
+  "transforms.routeEvent.regex": "evently\\.public\\.event",
+  "transforms.routeEvent.replacement": "CDC_EVENT"
+}

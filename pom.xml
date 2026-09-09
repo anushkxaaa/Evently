@@ -18,6 +18,7 @@
         <module>evt-bff</module>
         <module>evt-mongo-read</module>
         <module>evt-common</module>
+        <module>keycloak</module>
     </modules>
 
     <properties>

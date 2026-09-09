@@ -1,7 +1,10 @@
 package com.evently.service;
 
 import com.evently.common.cdc.CdcChangeHandler;
+import com.evently.document.EventReadModel;
 import com.evently.dto.EventCdcRow;
+import com.evently.mapper.EventCdcRowMapper;
+import com.evently.repository.EventReadModelRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -13,8 +16,8 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class EventChangeHandler implements CdcChangeHandler<UUID, EventCdcRow> {
 
-    // e.g. private final EventDocumentRepository repository;
-    // e.g. private final EventMapper eventMapper;
+    private final EventCdcRowMapper mapper;
+    private final EventReadModelRepository repository;
 
     @Override
     public UUID extractId(EventCdcRow row) {
@@ -23,14 +26,14 @@ public class EventChangeHandler implements CdcChangeHandler<UUID, EventCdcRow> {
 
     @Override
     public void upsert(EventCdcRow row) {
-        // var document = eventMapper.toDocument(row);
-        // repository.save(document);
-        log.info("Upserting event: {}", row.getId());
+        EventReadModel document = mapper.toReadModel(row);
+        repository.upsert(document);
+        log.info("Upserted event: {}", row.getId());
     }
 
     @Override
     public void delete(UUID id) {
-        // repository.deleteById(id.toString());
-        log.info("Deleting event: {}", id);
+        repository.deleteById(id);
+        log.info("Deleted event: {}", id);
     }
 }

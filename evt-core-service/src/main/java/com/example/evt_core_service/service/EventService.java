@@ -12,6 +12,7 @@ import com.example.evt_core_service.exception.EventNotFoundException;
 import com.example.evt_core_service.exception.IllegalStatusTransitionException;
 import com.example.evt_core_service.repository.EventRepository;
 import com.example.evt_core_service.repository.EventSpecifications;
+import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,6 +28,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Service
+@RequiredArgsConstructor
 public class EventService {
 
     private final EventRepository eventRepository;
@@ -39,9 +41,9 @@ public class EventService {
         ALLOWED_TRANSITIONS.put(EventStatus.SOLD_OUT, EnumSet.noneOf(EventStatus.class));
     }
 
-    public EventService(EventRepository eventRepository) {
-        this.eventRepository = eventRepository;
-    }
+//    public EventService(EventRepository eventRepository) {
+//        this.eventRepository = eventRepository;
+//    }
 
     @Transactional
     public EventResponse createEvent(CreateEventRequest request) {

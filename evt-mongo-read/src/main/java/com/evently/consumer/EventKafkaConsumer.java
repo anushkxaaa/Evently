@@ -2,6 +2,7 @@ package com.evently.consumer;
 
 import com.evently.common.cdc.CdcMessageProcessor;
 import com.evently.common.dto.CdcEventPayload;
+import com.evently.common.dto.DebeziumMessage;
 import com.evently.dto.EventCdcRow;
 import com.evently.service.EventChangeHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -19,7 +20,7 @@ public class EventKafkaConsumer {
     private final ObjectMapper objectMapper;
     private final EventChangeHandler eventChangeHandler;
 
-    @KafkaListener(topics = "evently.public.event", groupId = "evt-mongo-read")
+    @KafkaListener(topics = "${kafka.cdc.topic-pattern}", groupId = "evt-mongo-read")
     public void consume(ConsumerRecord<String, String> record) {
         log.info("Received Kafka message: {}", record.value());
         try {
@@ -31,10 +32,14 @@ public class EventKafkaConsumer {
     }
 
     private CdcEventPayload<EventCdcRow> parse(String rawJson) throws Exception {
-        return objectMapper.readValue(
+        DebeziumMessage<EventCdcRow> message = objectMapper.readValue(
                 rawJson,
                 objectMapper.getTypeFactory()
-                        .constructParametricType(CdcEventPayload.class, EventCdcRow.class)
+                        .constructParametricType(
+                                DebeziumMessage.class,
+                                EventCdcRow.class
+                        )
         );
+        return message.getPayload();
     }
 }
