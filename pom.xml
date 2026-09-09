@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.evently</groupId>
@@ -14,19 +16,46 @@
         <module>evt-core-service</module>
         <module>evt-open-service</module>
         <module>evt-bff</module>
+        <module>evt-mongo-read</module>
+        <module>evt-common</module>
     </modules>
 
     <properties>
         <java.version>25</java.version>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
-        <spring-boot.version>4.1.1</spring-boot.version>
+
+        <spring-boot.version>4.0.3</spring-boot.version>
+
         <grpc.version>1.68.0</grpc.version>
         <protobuf.version>3.25.5</protobuf.version>
+
+        <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- gRPC BOM (import BEFORE spring-boot-dependencies so grpc's
+                 Netty/managed versions win on any overlapping artifacts) -->
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-bom</artifactId>
+                <version>${grpc.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Protobuf BOM -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-bom</artifactId>
+                <version>${protobuf.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Boot -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -34,18 +63,41 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
     <build>
         <pluginManagement>
             <plugins>
+
+                <!-- Spring Boot Maven Plugin -->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring-boot.version}</version>
                 </plugin>
+
+                <!-- Maven Compiler -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <parameters>true</parameters>
+                        <release>${java.version}</release>
+                        <annotationProcessorPaths>
+                            <path>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                                <version>1.18.42</version>
+                            </path>
+                        </annotationProcessorPaths>
+                    </configuration>
+                </plugin>
+
             </plugins>
         </pluginManagement>
     </build>
+
 </project>

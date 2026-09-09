@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GrpcClientConfig {
 
+    private ManagedChannel channel;
+
     @Value("${evt-core-service.host:localhost}")
     private String coreServiceHost;
 
@@ -17,14 +19,18 @@ public class GrpcClientConfig {
     private int coreServicePort;
 
     @Bean
-    public ManagedChannel eventServiceChannel() {
-        return ManagedChannelBuilder.forAddress(coreServiceHost, coreServicePort)
+    public ManagedChannel eventServiceChannel(
+            @Value("${grpc.client.event-service.host}") String host,
+            @Value("${grpc.client.event-service.port}") int port
+    ) {
+        this.channel = ManagedChannelBuilder.forAddress(host, port)
                 .usePlaintext()
                 .build();
+        return channel;
     }
 
     @Bean
-    public EventServiceGrpc.EventServiceBlockingStub eventServiceStub(ManagedChannel eventServiceChannel) {
+    public EventServiceGrpc.EventServiceBlockingStub eventServiceBlockingStub(ManagedChannel eventServiceChannel) {
         return EventServiceGrpc.newBlockingStub(eventServiceChannel);
     }
 }

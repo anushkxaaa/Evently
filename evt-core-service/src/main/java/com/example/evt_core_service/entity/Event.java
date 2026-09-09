@@ -2,6 +2,7 @@ package com.example.evt_core_service.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.UUID;
 
@@ -32,6 +33,7 @@ public class Event extends BaseEntity{
     @Column(name ="status",nullable = false)
     private EventStatus status;
 
+    @Setter
     @Column(name = "bannerImageKey")
     private String bannerImageKey;
 
@@ -52,7 +54,4 @@ public class Event extends BaseEntity{
         this.status = newStatus;
     }
 
-    public void setBannerImageKey(String newBannerImageKey){
-        this.bannerImageKey = newBannerImageKey;
-    }
 }
