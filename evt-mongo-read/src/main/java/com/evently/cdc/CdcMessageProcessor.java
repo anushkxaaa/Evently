@@ -1,5 +1,6 @@
-package com.evently.common.cdc;
+package com.evently.cdc;
 
+import com.evently.common.cdc.CdcRecord;
 import com.evently.common.dto.CdcEventPayload;
 
 public class CdcMessageProcessor {
@@ -35,27 +36,20 @@ public class CdcMessageProcessor {
                 System.out.println("UPSERT FAILED FOR ID = " + id);
                 ex.printStackTrace();
             }
-
-        } else if (payload.isDelete()) {
+        }else if (payload.isDelete()) {
 
             T row = payload.getBefore();
-
             ID id = handler.extractId(row);
-
-            System.out.println("CALLING DELETE FOR ID = " + id);
 
             try {
                 handler.delete(id);
-
                 System.out.println("DELETE SUCCESS FOR ID = " + id);
-
             } catch (Exception ex) {
-
                 System.out.println("DELETE FAILED FOR ID = " + id);
-                ex.printStackTrace();
             }
 
-        } else {
+        } else
+        {
 
             System.out.println("IGNORED CDC OP = " + payload.getOp());
         }

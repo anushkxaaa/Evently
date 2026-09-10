@@ -1,6 +1,6 @@
 package com.evently.consumer;
 
-import com.evently.common.cdc.CdcMessageProcessor;
+import com.evently.cdc.CdcMessageProcessor;
 import com.evently.common.dto.CdcEventPayload;
 import com.evently.common.dto.DebeziumMessage;
 import com.evently.dto.EventCdcRow;

@@ -1,6 +1,6 @@
 package com.evently.service;
 
-import com.evently.common.cdc.CdcChangeHandler;
+import com.evently.cdc.CdcChangeHandler;
 import com.evently.document.EventReadModel;
 import com.evently.dto.EventCdcRow;
 import com.evently.mapper.EventCdcRowMapper;
@@ -32,8 +32,9 @@ public class EventChangeHandler implements CdcChangeHandler<UUID, EventCdcRow> {
     }
 
     @Override
-    public void delete(UUID id) {
-        repository.deleteById(id);
-        log.info("Deleted event: {}", id);
+    public void delete(EventCdcRow id){
+
     }
+
+
 }

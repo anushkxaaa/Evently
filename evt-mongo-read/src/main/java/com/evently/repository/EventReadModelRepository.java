@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
@@ -21,8 +22,13 @@ public class EventReadModelRepository {
         mongoTemplate.save(event);
     }
 
+    public EventReadModel findById(UUID id) {
+        Query query = new Query(Criteria.where("_id").is(id));
+        return mongoTemplate.findOne(query, EventReadModel.class);
+    }
     public void deleteById(UUID id) {
         Query query = new Query(Criteria.where("_id").is(id));
         mongoTemplate.remove(query, EventReadModel.class);
     }
+
 }

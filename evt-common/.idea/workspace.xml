@@ -5,24 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70f75143-6e19-4a6e-b761-6229cf154079" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../keycloak/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcSourceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcSourceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/cdc/CdcChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/cdc/CdcMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/cdc/CdcRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcEventPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcEventPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/event/EventCdcDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/event/EventCdcPayload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/mapper/EventReadModelMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventReadService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-open-service/src/main/java/com/evently/kafka/EventPublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/evt-core-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/evt-core-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,26 +44,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.evt-common [clean].executor": "Run",
-    "Maven.evt-common [install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "New",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/anush/IdeaProjects/Evently/evt-common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.evt-common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evt-common [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dummy&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anush/IdeaProjects/Evently/evt-common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

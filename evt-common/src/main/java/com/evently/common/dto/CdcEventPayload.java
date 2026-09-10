@@ -1,6 +1,5 @@
 package com.evently.common.dto;
 
-import com.evently.common.cdc.CdcRecord;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

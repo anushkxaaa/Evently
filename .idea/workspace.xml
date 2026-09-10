@@ -5,24 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0471d1b-4ad3-462e-9006-499ce17ff2d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/keycloak/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-bff/src/main/java/com/evently/client/OpenServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcSourceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcSourceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/src/main/java/com/example/evt_core_service/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/EvtMongoReadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/cdc/CdcChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/cdc/CdcMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcEventPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcEventPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/event/EventCdcDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/event/EventCdcPayload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/mapper/EventReadModelMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventReadService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-open-service/src/main/java/com/evently/kafka/EventPublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/evt-core-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/evt-core-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0000000244982439" />
-      <entry key="M10" value="1.0002112964103262" />
-      <entry key="M15" value="1.005960751884706" />
-      <entry key="M30" value="1.2918450905633978" />
-      <entry key="H1" value="5.669385130730983" />
-      <entry key="H2" value="32.2821720358049" />
-      <entry key="H4" value="117.1732835223711" />
-      <entry key="D1" value="786.3192045582639" />
-      <entry key="W1" value="1244.4863935318372" />
+      <entry key="MS100" value="1.000282474537974" />
+      <entry key="MS500" value="1.3394372022277032" />
+      <entry key="S2" value="2.2836603631736074" />
+      <entry key="S5" value="2.6749315829948266" />
+      <entry key="S10" value="2.830262454191824" />
+      <entry key="S30" value="2.9417400324353262" />
+      <entry key="S60" value="2.9706547094527904" />
+      <entry key="M2" value="2.985273129410297" />
+      <entry key="M5" value="2.9940962107493263" />
+      <entry key="M10" value="2.9972568925635406" />
+      <entry key="M15" value="3.003984945932093" />
+      <entry key="M30" value="3.290714744768384" />
+      <entry key="H1" value="7.667731054348275" />
+      <entry key="H2" value="34.278035016198565" />
+      <entry key="H4" value="119.16593567434343" />
+      <entry key="D1" value="788.3110441450048" />
+      <entry key="W1" value="1246.4845493314417" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="1.468906709455306E-240" />
-      <entry key="S30" value="1.1367494118643478E-80" />
-      <entry key="S60" value="1.066184511172596E-40" />
-      <entry key="M2" value="1.0325621100798713E-20" />
-      <entry key="M5" value="1.0128997730327568E-8" />
-      <entry key="M10" value="1.0064293370929553E-4" />
-      <entry key="M15" value="0.0021637773341931527" />
-      <entry key="M30" value="0.0478504254209118" />
-      <entry key="H1" value="0.3740151439855877" />
-      <entry key="H2" value="2.7341784974337644" />
-      <entry key="H4" value="17.912178293022553" />
-      <entry key="D1" value="230.46182887558993" />
-      <entry key="W1" value="387.9881970608825" />
+      <entry key="S10" value="1.3430777025181865E-240" />
+      <entry key="S30" value="1.1033171773884098E-80" />
+      <entry key="S60" value="1.0503890600098658E-40" />
+      <entry key="M2" value="1.0248849008595385E-20" />
+      <entry key="M5" value="1.009880619928191E-8" />
+      <entry key="M10" value="1.004928284380929E-4" />
+      <entry key="M15" value="0.0021616253356264597" />
+      <entry key="M30" value="0.047826624528507646" />
+      <entry key="H1" value="0.37392211449471735" />
+      <entry key="H2" value="2.7338384376040548" />
+      <entry key="H4" value="17.911064356658457" />
+      <entry key="D1" value="230.45944012402012" />
+      <entry key="W1" value="387.98762255512577" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.06515411005257009" />
-      <entry key="MS500" value="0.5791464030973216" />
-      <entry key="S2" value="0.8723627057707586" />
-      <entry key="S5" value="0.9468448827110206" />
-      <entry key="S10" value="0.9730595473613218" />
-      <entry key="S30" value="0.9909379769166484" />
-      <entry key="S60" value="0.9954586766494371" />
-      <entry key="M2" value="0.9977267545021719" />
-      <entry key="M5" value="0.9990901154233974" />
-      <entry key="M10" value="0.9998561945243021" />
-      <entry key="M15" value="1.0078111818995281" />
-      <entry key="M30" value="1.3394317123196051" />
-      <entry key="H1" value="6.04296446484212" />
-      <entry key="H2" value="35.01521635843474" />
-      <entry key="H4" value="135.08228197684716" />
-      <entry key="D1" value="1016.7751592901934" />
-      <entry key="W1" value="1632.4731959085575" />
+      <entry key="MS100" value="0.933170428928202" />
+      <entry key="MS500" value="1.2495994194090787" />
+      <entry key="S2" value="2.193073053793242" />
+      <entry key="S5" value="2.6262053639336616" />
+      <entry key="S10" value="2.8033510576233525" />
+      <entry key="S30" value="2.9321527080459835" />
+      <entry key="S60" value="2.9657805739448904" />
+      <entry key="M2" value="2.9828156827973134" />
+      <entry key="M5" value="2.9931083174476227" />
+      <entry key="M10" value="2.9968619294389627" />
+      <entry key="M15" value="3.0058065988599947" />
+      <entry key="M30" value="3.338264223736394" />
+      <entry key="H1" value="8.04121072962498" />
+      <entry key="H2" value="37.01073605089164" />
+      <entry key="H4" value="137.07381870554715" />
+      <entry key="D1" value="1018.7646099054637" />
+      <entry key="W1" value="1634.4707771643577" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -149,7 +148,7 @@
     "Spring Boot.EvtMongoReadApplication.executor": "Run",
     "Spring Boot.EvtOpenServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "New",
+    "git-widget-placeholder": "Dummy",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
