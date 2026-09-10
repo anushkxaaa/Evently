@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70f75143-6e19-4a6e-b761-6229cf154079" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/cdc/CdcChangeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/cdc/CdcMessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/cdc/CdcRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/cdc/CdcRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcEventPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/evently/common/dto/CdcEventPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/event/EventCdcDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/evently/event/EventCdcPayload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/mapper/EventReadModelMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/java/com/evently/service/EventReadService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evt-mongo-read/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../evt-mongo-read/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="70f75143-6e19-4a6e-b761-6229cf154079" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

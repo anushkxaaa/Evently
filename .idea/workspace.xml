@@ -6,22 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e0471d1b-4ad3-462e-9006-499ce17ff2d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evt-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/cdc/CdcChangeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/cdc/CdcMessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/cdc/CdcRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcEventPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/common/dto/CdcEventPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/event/EventCdcDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-common/src/main/java/com/evently/event/EventCdcPayload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/consumer/EventKafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/dto/EventCdcRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/mapper/EventReadModelMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/repository/EventReadModelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventChangeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/java/com/evently/service/EventReadService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evt-mongo-read/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-mongo-read/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-core-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-core-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/evt-core-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evt-core-service/src/test/java/com/example/evt_core_service/EvtCoreServiceApplicationTests.java.bak" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,49 +109,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EvtCoreServiceApplication.executor": "Run",
-    "Application.EvtOpenServiceApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.EvtCoreServiceApplicationTests.executor": "Run",
-    "Maven.evently-parent [clean,compile].executor": "Run",
-    "Maven.evently-parent [clean,install,-N].executor": "Run",
-    "Maven.evently-parent [clean,install,-pl...].executor": "Run",
-    "Maven.evently-parent [clean,install,-rf...].executor": "Run",
-    "Maven.evently-parent [clean,install].executor": "Run",
-    "Maven.evently-parent [clean].executor": "Run",
-    "Maven.evently-parent [compile].executor": "Run",
-    "Maven.evently-parent [dependency:tree,-pl...].executor": "Run",
-    "Maven.evently-parent [dependency:tree...].executor": "Run",
-    "Maven.evently-parent [deploy].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.EvtBffApplication (1).executor": "Run",
-    "Spring Boot.EvtBffApplication.executor": "Run",
-    "Spring Boot.EvtCoreServiceApplication.executor": "Run",
-    "Spring Boot.EvtMongoReadApplication.executor": "Run",
-    "Spring Boot.EvtOpenServiceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Dummy",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/anush/IdeaProjects/Evently/keycloak/src/main/java/com/evently/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EvtCoreServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EvtOpenServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvtCoreServiceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,install,-N].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,install,-pl...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,install,-rf...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [dependency:tree,-pl...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [dependency:tree...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.evently-parent [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EvtBffApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtBffApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtCoreServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtMongoReadApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvtOpenServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dummy&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/anush/IdeaProjects/Evently/keycloak/src/main/java/com/evently/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMThirdPartyAiProvidersConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anush\IdeaProjects\Evently\evt-core-service\src\main\java\com\example\evt_core_service" />

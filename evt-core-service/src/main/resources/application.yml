@@ -1,10 +1,13 @@
 spring:
   application:
     name: evt-core-service
+
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/evently}
+    url: jdbc:postgresql://localhost:5432/evently
     username: ${SPRING_DATASOURCE_USERNAME:evently}
     password: ${SPRING_DATASOURCE_PASSWORD:evently}
+    hikari:
+      connection-init-sql: SET TIME ZONE 'UTC'
 
 server:
   port: 8080
